@@ -1,10 +1,16 @@
 <template>
-  <div id="app">
-    <!-- <div id="nav">
+  <div class="LayoutDefault">
+    <nav class="LayoutDefault__nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link><span v-if="isLoggedIn"> | <a @click="logout">Logout</a></span>
-    </div> -->
-    <router-view/>
+      <router-link to="/about">About</router-link>
+      <span v-if="isLoggedIn"> | <a @click="logout">Logout</a></span>
+    </nav>
+    <main class="LayoutDefault__main">
+      <slot/>
+    </main>
+    <footer class="LayoutDefault__footer">
+      &copy; Awesome Company
+    </footer>
   </div>
 </template>
 
