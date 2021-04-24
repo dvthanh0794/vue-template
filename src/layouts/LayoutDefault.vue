@@ -2,7 +2,9 @@
   <div class="LayoutDefault">
     <nav class="LayoutDefault__nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/secure">Secure</router-link> |
       <span v-if="isLoggedIn"> | <a @click="logout">Logout</a></span>
     </nav>
     <main class="LayoutDefault__main">
